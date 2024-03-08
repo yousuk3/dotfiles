@@ -4,18 +4,6 @@
 
 This repository contains scripts to set macOS.
 
-## Required
-
-```shell
-% sw_vers
-ProductName:	macOS
-```
-
-```shell
-% zsh --version
-zsh 5.8.1 (x86_64-apple-darwin21.0)
-```
-
 ## Install
 
 Download installation materials.
