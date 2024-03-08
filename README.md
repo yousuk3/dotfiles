@@ -20,11 +20,11 @@ Set macOS.
 
 ## References
 
-bash
-- [Mac の環境を dotfiles でセットアップしてみた改](https://zenn.dev/tsukuboshi/articles/6e82aef942d9af)
-
 zsh
 - [dotfilesを作成し、Macの環境構築を一発でできるようにしてみた](https://zenn.dev/dani_rk/articles/19db34c9296ba7)
+
+bash
+- [Mac の環境を dotfiles でセットアップしてみた改](https://zenn.dev/tsukuboshi/articles/6e82aef942d9af)
 
 ## License
 
