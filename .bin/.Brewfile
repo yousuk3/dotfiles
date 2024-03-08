@@ -39,13 +39,14 @@ cask "raindropio"
 cask "raycast"
 cask "silentknight"
 cask "sourcetree"
+cask "todoist"
 cask "tor-browser"
 cask "utm"
 cask "vnc-viewer"
 cask "warp"
 
-mas "AmorphousDiskMark", id: 1168254295
 mas "Bitwarden", id: 1352778147
+mas "Disk Speed Test", id: 425264550
 mas "Kindle", id: 302584613
 mas "MenubarX", id: 1575588022
 mas "Microsoft Excel", id: 462058435
