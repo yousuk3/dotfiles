@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts to set macOS.
+This repository contains scripts to set macOS Sonoma.
 
 ## Install
 
