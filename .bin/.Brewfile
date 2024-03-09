@@ -8,6 +8,7 @@ tap "yousuk3/homebrew-cask"
 
 brew "aria2"
 brew "ffmpeg"
+brew "gh"
 brew "git"
 brew "python@3.11"
 brew "mas"
