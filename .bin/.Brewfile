@@ -4,7 +4,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "yousuk3/homebrew-cask"
+tap "yousuk3/homebrew-mycask"
 
 brew "aria2"
 brew "ffmpeg"
