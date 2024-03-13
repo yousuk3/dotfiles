@@ -1,14 +1,10 @@
 [user]
 	name = yousuk3
 	email = 161000005+yousuk3@users.noreply.github.com
-	signingkey = ~/.ssh/signing-key.pub
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
 [commit]
 	template = ~/.stCommitMsg
-	gpgsign = true
-[gpg]
-	format = ssh
 [alias]
 	ac = !git add -A && aicommits -a
