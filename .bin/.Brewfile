@@ -1,17 +1,13 @@
 #cask_args appdir: "/Applications"
-
 #Homebrew ver4.0.0以降はhomebrew/core、homebrew/cask不要
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "yousuk3/homebrew-mycask"
-
-brew "aicommits"
 brew "aria2"
 brew "ffmpeg"
 brew "gh"
 brew "git"
-brew "python@3.12"
 brew "p7zip"
 brew "mas"
 brew "neofetch"
@@ -19,7 +15,6 @@ brew "neovim"
 brew "rename"
 brew "vim"
 brew "wget"
-
 cask "adguard"
 cask "adguard-vpn"
 cask "alt-tab"
@@ -60,7 +55,6 @@ cask "utm"
 cask "vnc-server"
 cask "vnc-viewer"
 cask "warp"
-
 mas "Bitwarden", id: 1352778147
 mas "Disk Speed Test", id: 425264550
 mas "Kindle", id: 302584613

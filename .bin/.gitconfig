@@ -7,4 +7,4 @@
 [commit]
 	template = ~/.stCommitMsg
 [alias]
-	ac = !git add -A && aicommits -a
+#	ac = !git add -A && aicommits -a
