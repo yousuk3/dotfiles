@@ -1,5 +1,5 @@
 # Do everything.
-all: init link defaults brew setup other_apps
+all: init link defaults
 
 # Set initial preference.
 init:
@@ -17,7 +17,10 @@ link:
 defaults:
 	@echo "\033[0;34mRun defaults.sh\033[0m"
 	@.bin/defaults.sh
-	@echo "\033[0;32mDone.\033[0m"
+	@echo "\033[0;32mDone.Please reboot system.\033[0m"
+
+# After reboot setup
+after_reboot: brew setup
 
 # Install macOS applications.
 brew:
@@ -29,10 +32,4 @@ brew:
 setup:
 	@echo "\033[0;34mRun setup.sh\033[0m"
 	@.bin/setup.sh
-	@echo "\033[0;32mDone.\033[0m"
-
-# Setup Other apps
-other_apps:
-	@echo "\033[0;34mRun other_apps.sh\033[0m"
-	@.bin/other_apps.sh
 	@echo "\033[0;32mDone.\033[0m"
