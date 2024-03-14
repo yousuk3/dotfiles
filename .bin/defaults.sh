@@ -44,6 +44,9 @@ defaults write -g com.apple.sound.beep.feedback -bool "true"
 # システム設定 > 外観
 ################################################################################
 
+## サイドバーのアイコンサイズ
+defaults write -g NSTableViewDefaultSizeMode -int "1"
+
 ## スクロールバーを表示 > 常に表示
 defaults write -g AppleShowScrollBars -string "Always"
 
