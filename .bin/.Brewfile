@@ -3,6 +3,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "grishka/grishka"
 tap "yousuk3/homebrew-mycask"
 brew "aria2"
 brew "ffmpeg"
