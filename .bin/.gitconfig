@@ -1,9 +1,6 @@
 [user]
 	name = yousuk3
 	email = 161000005+yousuk3@users.noreply.github.com
-[url "github:"]
-	InsteadOf = https://github.com/
-	InsteadOf = git@github.com:
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
