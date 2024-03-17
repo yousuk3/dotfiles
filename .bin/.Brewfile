@@ -68,6 +68,7 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
 mas "Prime Video", id: 545519333
 mas "RunCat", id: 1429033973
+#mas "Spark", id: 1176895641
 mas "Spark Desktop", id: 6445813049
 mas "The Unarchiver", id: 425424353
 mas "VPN Unlimited®", id: 694633015
