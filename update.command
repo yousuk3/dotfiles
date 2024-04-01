@@ -1,6 +1,5 @@
 #!/bin/zsh
-sleep 90
+sleep 80
 brew update
 brew upgrade
 brew cleanup
-mas upgrade
