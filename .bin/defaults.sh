@@ -18,7 +18,7 @@ fi
 ################################################################################
 
 ## 詳細 > DNS > DNSサーバ
-networksetup -setdnsservers Wi-Fi 2606:4700:4700::1111 2606:4700:4700::1001 1.1.1.1 1.0.0.1
+#networksetup -setdnsservers Wi-Fi 2606:4700:4700::1111 2606:4700:4700::1001 1.1.1.1 1.0.0.1
 
 
 ################################################################################
@@ -253,7 +253,7 @@ defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 
 ## macOS sonomaの入力切り替えCaps Lockインジケータ非表示
-defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
 
 ## 未確認ファイルを開くときの警告無効化
 defaults write com.apple.LaunchServices LSQuarantine -bool "false"

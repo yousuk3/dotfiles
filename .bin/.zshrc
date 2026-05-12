@@ -80,12 +80,8 @@ function gsd (){
 # alias gil='curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/list'
 # alias gihelp='echo "gitignore.io help:\n - gil: lists the operating systems, programming languages and IDE input types\n - gi <types>: creates .gitignore files for types of operating systems, programming languages or IDEs"'
 
-alias vi="nvim"
-alias vim="nvim"
-alias view="nvim -R"
-
 alias alhelp='cat ${HOME}/.zshrc'
 # ===============================================
 
 # Run neofetch at startup
-neofetch
+fastfetch

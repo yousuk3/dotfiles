@@ -2,30 +2,41 @@
 
 ## Overview
 
-This repository contains scripts to set macOS Sonoma.
+This repository contains scripts to set up macOS Tahoe.
 
 ## Install
 
-Download installation materials.
+Clone this repository.
 
 ```shell
-% cd ~ && git clone https://github.com/yousuk3/dotfiles
+cd ~
+git clone https://github.com/yousuk3/dotfiles
+cd ~/dotfiles
 ```
 
-Set macOS.
+Run setup step by step.
 
 ```shell
-% cd ~/dotfiles && make
+make init
+make link
+make defaults
 ```
 
-## References
+Restart macOS.
 
-zsh
-- [dotfilesを作成し、Macの環境構築を一発でできるようにしてみた](https://zenn.dev/dani_rk/articles/19db34c9296ba7)
+After restart, sign in to the App Store, then run:
 
-bash
-- [Mac の環境を dotfiles でセットアップしてみた改](https://zenn.dev/tsukuboshi/articles/6e82aef942d9af)
+```shell
+make brew
+make setup
+```
 
-## License
+## Manual steps
 
-[MIT](LICENSE)
+- Sign in to iCloud
+- Sign in to App Store before `make brew`
+- Sign in to Google Chrome / Firefox
+- Sign in to Bitwarden / Proton Pass
+- Allow permissions for Karabiner-Elements, Logi Options+, Raycast, AdGuard
+- Configure Raycast
+- Configure Google Japanese IME

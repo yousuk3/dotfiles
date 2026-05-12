@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Link all dotfiles in .bin to $HOME
+# Be careful: any hidden file in .bin will be symlinked.
+
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 for dotfile in "${SCRIPT_DIR}"/.??* ; do
