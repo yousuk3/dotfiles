@@ -83,5 +83,5 @@ function gsd (){
 alias alhelp='cat ${HOME}/.zshrc'
 # ===============================================
 
-# Run neofetch at startup
+# Run fastfetch at startup
 fastfetch
