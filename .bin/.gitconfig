@@ -4,12 +4,3 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
-[commit]
-	template = ~/.stCommitMsg
-[alias]
-#	ac = !git add -A && aicommits -a
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
