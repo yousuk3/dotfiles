@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 brew "fastfetch"
 brew "ffmpeg"
 brew "gh"
