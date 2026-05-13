@@ -11,11 +11,11 @@ if [ "$(uname -m)" = "arm64" ] ; then
   /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
 
-# Homebrew
-if ! command -v brew >/dev/null 2>&1; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Xcode Command Line Tools
+if ! xcode-select -p >/dev/null 2>&1; then
+  xcode-select --install
 else
-  echo "Homebrew already installed."
+  echo "Xcode Command Line Tools already installed."
 fi
 
 # Homebrew
