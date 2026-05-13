@@ -25,7 +25,7 @@ else
   echo "Homebrew already installed."
 fi
 
-# Homebrew PASS
+# Homebrew PATH
 if [ "$(uname -m)" = "arm64" ] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)" > /dev/null
 elif [ "$(uname -m)" = "x86_64" ] ; then
