@@ -11,11 +11,21 @@ if [ "$(uname -m)" = "arm64" ] ; then
   /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
 
-# Install xcode
-xcode-select --install
+# Homebrew
+if ! command -v brew >/dev/null 2>&1; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "Homebrew already installed."
+fi
 
-# Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Homebrew
+if ! command -v brew >/dev/null 2>&1; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "Homebrew already installed."
+fi
+
+# Homebrew PASS
 if [ "$(uname -m)" = "arm64" ] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)" > /dev/null
 elif [ "$(uname -m)" = "x86_64" ] ; then
