@@ -2,8 +2,8 @@
 
 # Check operating system
 if [ "$(uname)" != "Darwin" ] ; then
-	echo "Not macOS!"
-	exit 1
+  echo "Not macOS!"
+  exit 1
 fi
 
 # Install Rosetta 2 for Apple Silicon
@@ -14,6 +14,8 @@ fi
 # Xcode Command Line Tools
 if ! xcode-select -p >/dev/null 2>&1; then
   xcode-select --install
+  echo "Install Xcode Command Line Tools, then run this script again."
+  exit 0
 else
   echo "Xcode Command Line Tools already installed."
 fi
@@ -26,8 +28,8 @@ else
 fi
 
 # Homebrew PATH
-if [ "$(uname -m)" = "arm64" ] ; then
-  eval "$(/opt/homebrew/bin/brew shellenv)" > /dev/null
-elif [ "$(uname -m)" = "x86_64" ] ; then
-  eval "$(/usr/local/bin/brew shellenv)" > /dev/null
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [ -x /usr/local/bin/brew ]; then
+  eval "$(/usr/local/bin/brew shellenv)"
 fi
