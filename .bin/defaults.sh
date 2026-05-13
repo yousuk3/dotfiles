@@ -123,10 +123,10 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 
 
 ################################################################################
-# システム設定 > ロック画面
+# 壁紙 > スクリーンセーバー
 ################################################################################
 
-## 使用していない場合はスクリーンセーバを開始 > しない
+## スクリーンセーバを開始 > しない
 defaults -currentHost write com.apple.screensaver idleTime -int 0
 
 
@@ -134,10 +134,10 @@ defaults -currentHost write com.apple.screensaver idleTime -int 0
 # システム設定 > キーボード
 ################################################################################
 
-## キーのリピート速度
+## キーのリピート速度（最速）
 defaults write -g KeyRepeat -int 2
 
-## リピート入力認識までの時間
+## リピート入力認識までの時間（最速）
 defaults write -g InitialKeyRepeat -int 15
 
 # キーボードナビゲーション
@@ -160,13 +160,13 @@ defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool "false"
 # システム設定 > マウス
 ################################################################################
 
-## 軌跡の速さ
+## 軌跡の速さ（最速から４番目）
 defaults write -g com.apple.mouse.scaling 1.5
 
 ## ナチュラルなスクロール
 defaults write -g com.apple.swipescrolldirection -bool "false"
 
-## スクロールの速さ
+## スクロールの速さ（最速から２番め）
 defaults write -g com.apple.scrollwheel.scaling 4
 
 ## 詳細設定 > ポインタを加速
@@ -177,10 +177,10 @@ defaults write -g com.apple.mouse.linear -bool "true"
 # システム設定 > トラックパッド
 ################################################################################
 
-## 軌跡の速さ
+## 軌跡の速さ（最速）
 defaults write -g com.apple.trackpad.scaling 3
 
-## タップでクリック
+## タップでクリック（すでにONだった）
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool "true"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool "true"
 defaults -currentHost write -g com.apple.mouse.tapBehavior -bool "true"
@@ -228,6 +228,13 @@ defaults write com.apple.screencapture "location" -string "~/Pictures/Screenshot
 
 
 ################################################################################
+# バッテリー > 充電
+################################################################################
+
+## 充電上限を80%にする
+
+
+################################################################################
 # GUIの設定項目にないもの
 ################################################################################
 
@@ -247,16 +254,16 @@ defaults write com.apple.screencapture "type" -string "jpg"
 defaults write com.apple.screencapture "disable-shadow" -bool "true"
 
 ## Dockからすべてのアプリを消す
-defaults write com.apple.dock persistent-apps -array
+#defaults write com.apple.dock persistent-apps -array
 
 ## 隠しファイルを表示
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 
 ## macOS sonomaの入力切り替えCaps Lockインジケータ非表示
-sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+#sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
 
 ## 未確認ファイルを開くときの警告無効化
-defaults write com.apple.LaunchServices LSQuarantine -bool "false"
+#defaults write com.apple.LaunchServices LSQuarantine -bool "false"
 
 # フィードバックを送信しない
 defaults write com.apple.appleseed.FeedbackAssistant "Autogather" -bool "false"
