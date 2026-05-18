@@ -8,7 +8,7 @@ fi
 
 # Install Rosetta 2 for Apple Silicon
 if [ "$(uname -m)" = "arm64" ] ; then
-  /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+  softwareupdate --install-rosetta --agree-to-license
 fi
 
 # Xcode Command Line Tools
