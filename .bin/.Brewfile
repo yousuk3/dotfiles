@@ -25,6 +25,9 @@ cask "karabiner-elements"
 cask "logi-options+"
 cask "macwinzipper"
 cask "microsoft-edge"
+cask "microsoft-excel"
+cask "microsoft-powerpoint"
+cask "microsoft-word"
 cask "notion"
 cask "obsidian"
 cask "proton-pass"
@@ -36,9 +39,6 @@ cask "visual-studio-code"
 cask "vlc"
 cask "warp"
 mas "MenubarX", id: 1575588022
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
 mas "RunCat", id: 1429033973
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
