@@ -5,6 +5,7 @@
     ./packages.nix
     ./git.nix
     ./zsh.nix
+    ./vim.nix
   ];
 
   home.username = user;
