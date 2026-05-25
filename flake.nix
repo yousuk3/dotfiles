@@ -22,25 +22,24 @@
     mkDarwin = hostname: system:
       nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit inputs user hostname;
+          inherit inputs user hostname system;
         };
 
         modules = [
-          ./darwin.nix
+          ./nix-darwin/configuration.nix
 
           home-manager.darwinModules.home-manager
 
           {
-            nixpkgs.hostPlatform = system;
-
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "before-home-manager";
+
             home-manager.extraSpecialArgs = {
-              inherit inputs user hostname;
+              inherit inputs user hostname system;
             };
 
-            home-manager.users.${user} = import ./home.nix;
+            home-manager.users.${user} = import ./home-manager/home.nix;
           }
         ];
       };

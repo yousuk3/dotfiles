@@ -1,30 +1,6 @@
-{ config, pkgs, user, hostname, ... }:
+{ user, ... }:
 
 {
-  system.stateVersion = 6;
-
-  system.primaryUser = user;
-
-  users.users.${user}.home = "/Users/${user}";
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-
-  nix.settings.trusted-users = [
-    "@admin"
-    user
-  ];
-
-  nixpkgs.config.allowUnfree = true;
-
-  programs.zsh.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
-
   homebrew = {
     enable = true;
     user = user;
@@ -33,8 +9,8 @@
       autoUpdate = false;
       upgrade = false;
 
-      # 最初は "none" 推奨。
-      # 慣れたら "check"、完全管理にしたら "uninstall" も検討。
+      # 移行初期は none が安全。
+      # 完全にnix-darwin管理へ寄せたら check → uninstall を検討。
       cleanup = "none";
     };
 
