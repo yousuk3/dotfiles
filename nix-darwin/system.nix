@@ -175,9 +175,7 @@ in
   # ---------------------------------------------------------------------------
   # Extra activation commands for settings not cleanly represented by nix-darwin
   # ---------------------------------------------------------------------------
-  system.activationScripts.extraUserDefaults.text = ''
-    echo "Applying extra macOS user defaults..."
-
+  system.activationScripts.extraActivation.text = ''
     # Create the screenshot directory if it does not exist.
     /bin/mkdir -p "${homeDir}/Pictures/Screenshots"
     /usr/sbin/chown ${user}:staff "${homeDir}/Pictures/Screenshots" || true
