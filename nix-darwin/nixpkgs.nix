@@ -21,9 +21,5 @@
 
   programs.zsh.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
-
   system.stateVersion = 6;
 }
