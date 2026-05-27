@@ -3,17 +3,21 @@
 {
   home.packages = with pkgs; [
     bat
+    # direnv  -> programs.direnv.enable
     eza
+    exiftool
     fastfetch
     fd
-    fzf
+    # fzf     -> programs.fzf.enable
     gh
-    git
+    # git     -> programs.git.enable
     jq
     p7zip
     ripgrep
     tree
-    zoxide
+    # vim     -> programs.vim.enable
+    # zoxide  -> programs.zoxide.enable
+    # zsh     -> programs.zsh.enable
   ];
 
   programs.fzf.enable = true;

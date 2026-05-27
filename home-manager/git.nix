@@ -11,7 +11,7 @@
       };
 
       core = {
-        editor = "vim";
+        editor = "code --wait";
       };
 
       init = {

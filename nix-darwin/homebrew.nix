@@ -19,24 +19,24 @@
     ];
 
     casks = [
-      "alt-tab"
-      "appcleaner"
-      "brave-browser"
-      "firefox"
-      "google-japanese-ime"
-      "karabiner-elements"
-      "microsoft-edge"
-      "microsoft-excel"
-      "microsoft-onenote"
-      "microsoft-outlook"
-      "microsoft-powerpoint"
-      "microsoft-word"
-      "raycast"
-      "visual-studio-code"
+      #"alt-tab"
+      #"appcleaner"
+      #"brave-browser"
+      #"firefox"
+      #"google-japanese-ime"
+      #"karabiner-elements"
+      #"microsoft-edge"
+      #"microsoft-excel"
+      #"microsoft-onenote"
+      #"microsoft-outlook"
+      #"microsoft-powerpoint"
+      #"microsoft-word"
+      #"raycast"
+      #"visual-studio-code"
     ];
 
     masApps = {
-      "RunCat" = 1429033973;
+      #"RunCat" = 1429033973;
     };
   };
 }
