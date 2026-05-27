@@ -32,7 +32,7 @@
       #"microsoft-powerpoint"
       #"microsoft-word"
       #"raycast"
-      #"visual-studio-code"
+      "visual-studio-code"
     ];
 
     masApps = {

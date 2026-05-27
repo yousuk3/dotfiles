@@ -11,9 +11,42 @@ Set these manually first:
   - remove `のコンピューター`
 - Disable startup sound
 - Mute audio
+- Accessibility > Pointer Control > Trackpad Options
+  - Enable `Use trackpad for dragging`
+  - Dragging style: `Three-Finger Drag`
+- Menu Bar
+  - Hide Spotlight in the menu bar
+- Wallpaper > Screen Saver
+  - Start Screen Saver: `Never`
+- Mouse
+  - Tracking speed: 4th from the fastest
+  - Scrolling speed: 2nd from the fastest
+  - Advanced > Pointer acceleration: Off
+- Finder
+  - Disable warning before removing from iCloud Drive
+- Defaults
+  - Disable boot chime:
 
 ```sh
 sudo nvram BootPreference=%00
+```
+
+  - Disable Feedback Assistant auto-gathering:
+
+```sh
+defaults write com.apple.appleseed.FeedbackAssistant Autogather -bool false
+```
+
+  - Avoid `.DS_Store` files on network volumes:
+
+```sh
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+```
+
+  - Avoid `.DS_Store` files on USB volumes:
+
+```sh
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ```
 
 ## Xcode Command Line Tools
