@@ -32,6 +32,7 @@
       "microsoft-word"
       "obsidian"
       "raycast"
+      "stremio"
       "visual-studio-code"
     ];
 
